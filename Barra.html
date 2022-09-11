@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="file:///C:/Users/alhea/Downloads/pngegg%20(1).png">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargando...</title>
+    <style>
+        .inicio{
+            width: 0%;
+        }
+        .transicion{
+            transition: all 15s ease;
+        }
+        .final{
+            width: 100%;
+        }
+        .pequeño{
+            position: absolute;
+            width: 75%;
+            top: 50%;
+            right: 13%;
+        }
+        .pequeño1{
+            position: absolute;
+            right: 43%;
+            top: 40%;
+
+        }
+        .invisible{
+            visibility: hidden;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="pequeño1" align="center">INICIANDO...</h1>
+    <div class="pequeño progress">
+        <div id="barra" class="tamaño progress-bar progress-bar-striped progress-bar-animated inicio transicion" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <a href="Cole.html"><button id="boton3" type="button" class="invisible btn btn-primary btn-lg btn-block">Empezar</button>
+        </a>
+
+    <script>
+         function ya(){
+            document.getElementById("barra").classList.add("final")
+         }
+         function quitar(){
+            document.getElementById("boton3").classList.remove("invisible")
+         }
+         setTimeout(ya, 800);
+         setTimeout(quitar, 15200)
+    </script>
+</body>
+</html>
